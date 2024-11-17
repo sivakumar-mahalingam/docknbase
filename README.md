@@ -63,6 +63,6 @@ You can easily customize database versions, ports, and environment variables by 
 Contributions are welcome! If you’d like to add a new database or improve existing configurations, feel free to submit a pull request.
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the [MIT LICENSE](MIT LICENSE).
 
 
