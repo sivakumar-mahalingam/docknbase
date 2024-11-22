@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  db2:
+    image: ibmcom/db2:11.5.8.0
+    container_name: db2_server
+    restart: always
+    privileged: true
+    environment:
+      LICENSE: accept
+      DB2INST1_PASSWORD: password
+      DBNAME: mydatabase
+    ports:
+      - "50000:50000"
+    volumes:
+      - db2_data:/database
+    command: db2start
+    networks:
+      - db2_network
+
+volumes:
+  db2_data: 
+
+networks:
+  db2_network:
