@@ -11,7 +11,7 @@ services:
       DB2INST1_PASSWORD: password
       DBNAME: mydatabase
     ports:
-      - "50000:50000"
+      - 50000:50000
     volumes:
       - db2_data:/database
     command: db2start
